@@ -67,8 +67,8 @@ var Countdown = React.createClass({
 				<h1 className="page-title">Countdown App</h1>
 				<Clock totalSeconds={count}/>
 				{ countdownStatus !== 'stopped' ?
-					<Controls countdownStatus={countdownStatus} onStatusChange={this.handleStatusChange} /> :
-					<CountdownForm onSetCountdown={this.handleSetCountdown} />
+					<Controls countdownStatus={countdownStatus} onStatusChange={this.handleStatusChange}/> :
+					<CountdownForm onSetCountdown={this.handleSetCountdown}/>
 				}						
 			</div>
 		);
